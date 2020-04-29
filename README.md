@@ -38,5 +38,5 @@ This project seeks to be able to predict the number of ion channels open in a pa
 
 ## Future Improvements
 ---
-TODO
+Improve the model more.
 

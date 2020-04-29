@@ -75,3 +75,5 @@ class TrigTransformation():
         self.fit(start, period, height)
         return self.transform(data)
     
+    
+    

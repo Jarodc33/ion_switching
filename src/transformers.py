@@ -77,3 +77,21 @@ class TrigTransformation():
     
     
     
+class MeanTransformer():
+    def __init__(self):
+        pass
+    
+    
+    def fit(self, training_data):
+        self.mean = np.array(training_data).mean()
+        return self
+    
+    
+    def transform(self, data):
+        mean = np.array(data).mean()
+        return data.copy() - (mean - self.mean)
+    
+    
+    def fit_transform(self, data):
+        self.fit(data)
+        return self.transform(data)

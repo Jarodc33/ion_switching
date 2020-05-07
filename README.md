@@ -19,7 +19,7 @@ This project seeks to be able to predict the number of ion channels open in a pa
 
 ## Navigating the Repo
 ---
-- enviroment.yml - file for creating the conda enviroment
+- enviroment.yml - file for creating the conda enviroment following the instructions at https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file for creating a conda envitoment from a .yml file
 - presentation.pdf
 - README.md
 - src - this folder holds the python scripts with code for running the notebooks in the repo

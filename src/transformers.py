@@ -3,6 +3,9 @@ import pandas as pd
 import math
 
 class LinearTransformation():
+    """
+    This class is able to subtract off a linear function from data assuming the first column is x and the second is y
+    """
     def __init__(self):
         pass
     
@@ -27,6 +30,9 @@ class LinearTransformation():
     
     
 class ParabolicTransformation():
+    """
+    This class is able to subtract off a parabolic function from data assuming the first column is x and the second is y
+    """
     def __init__(self):
         pass
     
@@ -52,6 +58,9 @@ class ParabolicTransformation():
     
     
 class TrigTransformation():
+    """
+    This class is able to subtract off a trig function from data assuming the first column is x and the second is y
+    """
     def __init__(self, trig_function : str):
         self.function = exec('math.' + trig_function)
     
@@ -78,6 +87,9 @@ class TrigTransformation():
     
     
 class MeanTransformer():
+    """
+    This class will transform a dataset to have the mean of another data set. If the training data is a number then the mean will be transformed to that number
+    """
     def __init__(self):
         pass
     

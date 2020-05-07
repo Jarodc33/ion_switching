@@ -4,6 +4,9 @@ import pandas as pd
 from src.transformers import LinearTransformation, ParabolicTransformation, TrigTransformation
 
 def chunk_data(data, number_of_chunks):
+    """
+    This breaks any data into number of chunks by row. Each chunk has len(data) / number of chunks number of rows in it
+    """
     chunks = list()
     lst = np.linspace(0, len(data), number_of_chunks + 1, dtype = int)
     for start, stop in zip(lst[0:-1], lst[1:]):
@@ -11,6 +14,10 @@ def chunk_data(data, number_of_chunks):
     return chunks
 
 def transform_train_chunks(train_chunks):
+    """
+    This is responsible for transforming the training data that has already been chunked
+    This is project specific
+    """
     lt = LinearTransformation()
     tt = TrigTransformation(trig_function = 'sin')
 
@@ -23,6 +30,10 @@ def transform_train_chunks(train_chunks):
     return train_chunks
     
 def transform_test_chunks(test_chunks):
+    """
+    This is responsible for transforming the testing data that has already been chunked
+    This is project specific
+    """
     lt = LinearTransformation()
     tt = TrigTransformation(trig_function = 'sin')
     

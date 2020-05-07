@@ -19,7 +19,13 @@ from src.sliding_window import *
 
 sliding_window_size = None
             
-
+"""
+DOCSTRING
+---------
+These classes are the models for the notebooks. Their implementation is like a limited version of a scikit learn model. They only have the methods that I use in the notebooks though (fit and predict).
+---------
+DOCSTRING
+"""
 
 
 class BasicNN():
